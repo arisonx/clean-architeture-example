@@ -175,4 +175,3 @@ Camada mais externa, composta por frameworks e ferramentas como Express, Prisma,
 - **Testabilidade** - Facilidade para escrever testes unitários
 - **Flexibilidade** - Mudanças em uma camada não afetam outras
 - **Independência** - Possibilidade de trocar tecnologias com mínimo impacto
-```
