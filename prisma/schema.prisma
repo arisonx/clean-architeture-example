@@ -1,0 +1,29 @@
+/**
+ * Esquema do Prisma ORM
+ * Define a estrutura do banco de dados e configura o cliente Prisma
+ */
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+/**
+ * Modelo de produto no banco de dados
+ * Mapeado para a tabela "products"
+ */
+model Product {
+  id       String    @id
+  name     String
+  price    Float
+  quantity Int
+
+  @@map("products")
+}
